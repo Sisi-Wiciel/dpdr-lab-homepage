@@ -128,11 +128,11 @@ window.siteContent = {
   ],
   team: [
     {
-      name: '课题负责人',
-      nameEn: 'Principal Investigator',
-      role: 'PI / Principal Investigator',
-      desc: '研究方向聚焦 DPDR、自我意识、insula–mPFC 环路、多模态生物标志物与针刺转化。此处后续建议替换为真实姓名、简介与链接。',
-      descEn: 'Research focuses on DPDR, self-consciousness, the insula–mPFC circuit, multimodal biomarkers, and acupuncture-oriented translational studies. Replace with the real PI name, biography, and links later.'
+      name: '郑思思',
+      nameEn: 'Sisi Zheng',
+      role: '课题负责人 / PI, Principal Investigator',
+      desc: '研究方向聚焦 DPDR、自我意识、insula–mPFC 环路、多模态生物标志物与针刺转化，致力于将病种研究升级为关于自我感与现实感构建机制的大科学问题研究。',
+      descEn: 'Her research focuses on DPDR, self-consciousness, the insula–mPFC circuit, multimodal biomarkers, and acupuncture-oriented translation, with the broader goal of elevating disease-centered work into a larger science of selfhood and reality construction.'
     },
     {
       name: '博士研究生',

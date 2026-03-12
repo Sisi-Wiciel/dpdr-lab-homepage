@@ -1,4 +1,6 @@
 const data = window.siteContent;
+const body = document.body;
+body.classList.add('lang-zh');
 
 const renderCards = (id, items, template) => {
   const root = document.getElementById(id);
@@ -89,4 +91,14 @@ const menuBtn = document.getElementById('menuBtn');
 const navMenu = document.getElementById('navMenu');
 if (menuBtn && navMenu) {
   menuBtn.addEventListener('click', () => navMenu.classList.toggle('open'));
+}
+
+const langToggle = document.getElementById('langToggle');
+if (langToggle) {
+  langToggle.addEventListener('click', () => {
+    const isZh = body.classList.contains('lang-zh');
+    body.classList.toggle('lang-zh', !isZh);
+    body.classList.toggle('lang-en', isZh);
+    langToggle.textContent = isZh ? '中文' : 'EN';
+  });
 }
