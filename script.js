@@ -19,9 +19,15 @@ renderCards('researchGrid', data.research, item => `
 renderCards('pubList', data.publications, item => `
   <article class="pub-card">
     <h3>${item.title}</h3>
-    <div class="pub-meta">${item.meta}</div>
+    <div class="pub-meta"><strong>${item.journal || ''}</strong> · ${item.year || ''}${item.doi ? ` · DOI: ${item.doi}` : ''}</div>
+    <div class="author-line">${item.authors || ''}</div>
     <p>${item.note}</p>
     <p class="en-text">${item.noteEn || ''}</p>
+    <div class="chip-row">${(item.tags || []).map(t => `<span class="chip">${t}</span>`).join('')}</div>
+    <div class="link-row">
+      ${item.url ? `<a class="text-link" href="${item.url}" target="_blank" rel="noreferrer">DOI Link</a>` : ''}
+      ${item.pmidUrl ? `<a class="text-link" href="${item.pmidUrl}" target="_blank" rel="noreferrer">PubMed</a>` : ''}
+    </div>
   </article>
 `);
 

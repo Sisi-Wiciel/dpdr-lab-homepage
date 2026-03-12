@@ -59,6 +59,10 @@ a { color: inherit; text-decoration: none; }
 .chip { font-size: 12px; color: var(--primary); background: rgba(15,111,143,0.1); padding: 6px 9px; border-radius: 999px; }
 .publication-list, .news-list, .timeline { display: grid; gap: 16px; }
 .pub-meta, .project-meta, .news-meta { color: var(--muted); font-size: 14px; }
+.author-line { color: var(--text); font-size: 14px; margin-top: 8px; margin-bottom: 10px; }
+.link-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
+.text-link { color: var(--primary); font-weight: 700; font-size: 14px; }
+.text-link:hover { color: var(--primary-dark); text-decoration: underline; }
 .team-role { color: var(--primary); font-weight: 700; font-size: 14px; }
 .team-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .avatar { width: 56px; height: 56px; border-radius: 16px; background: linear-gradient(135deg, var(--primary), var(--accent)); color: #fff; display: grid; place-items: center; font-weight: 800; margin-bottom: 14px; }
