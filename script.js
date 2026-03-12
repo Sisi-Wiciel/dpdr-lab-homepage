@@ -54,6 +54,21 @@ renderCards('newsList', data.news, item => `
   </article>
 `);
 
+const softwareList = document.getElementById('softwareList');
+if (softwareList && data.assets?.software) {
+  softwareList.innerHTML = data.assets.software.map(item => `<span class="chip">${item}</span>`).join('');
+}
+
+const patentList = document.getElementById('patentList');
+if (patentList && data.assets?.patents) {
+  patentList.innerHTML = data.assets.patents.map(item => `<span class="chip">${item}</span>`).join('');
+}
+
+const pipelineList = document.getElementById('pipelineList');
+if (pipelineList && data.assets?.pipeline) {
+  pipelineList.innerHTML = `<ul class="clean-list">${data.assets.pipeline.map(item => `<li>${item}</li>`).join('')}</ul>`;
+}
+
 const menuBtn = document.getElementById('menuBtn');
 const navMenu = document.getElementById('navMenu');
 if (menuBtn && navMenu) {
