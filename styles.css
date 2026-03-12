@@ -47,6 +47,8 @@ a { color: inherit; text-decoration: none; }
 .eyebrow { color: var(--primary); text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; font-weight: 800; margin: 0 0 8px; }
 .section h2 { font-size: clamp(28px, 4vw, 40px); margin: 0; }
 .section-note, .muted { color: var(--muted); }
+.en-subtitle { color: var(--primary); font-size: 14px; font-weight: 700; margin-top: -2px; margin-bottom: 8px; }
+.en-text { color: var(--muted); font-size: 14px; margin-top: 8px; }
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
 .panel { padding: 24px; }
 .clean-list { padding-left: 18px; margin: 0; }

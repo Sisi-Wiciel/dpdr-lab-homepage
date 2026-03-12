@@ -9,7 +9,9 @@ const renderCards = (id, items, template) => {
 renderCards('researchGrid', data.research, item => `
   <article class="research-card">
     <h3>${item.title}</h3>
+    <div class="en-subtitle">${item.titleEn || ''}</div>
     <p>${item.desc}</p>
+    <p class="en-text">${item.descEn || ''}</p>
     <div class="chip-row">${item.tags.map(t => `<span class="chip">${t}</span>`).join('')}</div>
   </article>
 `);
@@ -19,6 +21,7 @@ renderCards('pubList', data.publications, item => `
     <h3>${item.title}</h3>
     <div class="pub-meta">${item.meta}</div>
     <p>${item.note}</p>
+    <p class="en-text">${item.noteEn || ''}</p>
   </article>
 `);
 
@@ -26,23 +29,29 @@ renderCards('teamGrid', data.team, item => `
   <article class="team-card">
     <div class="avatar">${item.name.slice(0,1)}</div>
     <h3>${item.name}</h3>
+    <div class="en-subtitle">${item.nameEn || ''}</div>
     <div class="team-role">${item.role}</div>
     <p>${item.desc}</p>
+    <p class="en-text">${item.descEn || ''}</p>
   </article>
 `);
 
 renderCards('projectGrid', data.projects, item => `
   <article class="project-card">
     <h3>${item.title}</h3>
+    <div class="en-subtitle">${item.titleEn || ''}</div>
     <div class="project-meta">${item.meta}</div>
     <p>${item.desc}</p>
+    <p class="en-text">${item.descEn || ''}</p>
   </article>
 `);
 
 renderCards('translationTimeline', data.translation, item => `
   <article class="timeline-item">
     <h3>${item.stage}</h3>
+    <div class="en-subtitle">${item.stageEn || ''}</div>
     <p>${item.desc}</p>
+    <p class="en-text">${item.descEn || ''}</p>
   </article>
 `);
 
@@ -51,6 +60,7 @@ renderCards('newsList', data.news, item => `
     <h3>${item.title}</h3>
     <div class="news-meta">${item.meta}</div>
     <p>${item.desc}</p>
+    <p class="en-text">${item.descEn || ''}</p>
   </article>
 `);
 
